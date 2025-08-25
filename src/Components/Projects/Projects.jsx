@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import img from "./images/image.png"
+import food from "./images/food.jpg"
 import elearn from "./images/elearna (2).png"
 import un from "./images/un.png"
 import form from "./images/form1.png"
 import portfolio from "./images/portfolio .png";
+import hospital from "./images/hospital.webp"
 const projects = [
   {
     title: "Elearna - Online Learning Platform",
@@ -39,19 +40,19 @@ const projects = [
      tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "comming soon...",
-    description: "A personal portfolio website to showcase ",
-    link: "https://new-portfolio-seven-taupe.vercel.app/",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: portfolio,
+    title: "Afghan Food Delivery",
+    description: " This Application Allow users to order food online from local Afghan restaurants and have it delivered to their doorstep.",
+    link: "#",
+    repo: "#",
+    image: food,
      tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "comming soon...",
-    description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
-    link: "https://new-portfolio-seven-taupe.vercel.app/",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: portfolio,
+    title: "Hospital Management System",
+    description: " A comprehensive system for managing hospital operations, including patient records, appointments, and billing.",
+    link: "#",
+    repo: "#",
+    image: hospital,
      tags: ["React","JavaScript", "Tailwind"]
   },
   
