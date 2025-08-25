@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import nasib from "./images/nasib1.jpg"
+import image from "./images/image.jpg";
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-950 text-gray-800 dark:text-gray-200 flex items-center justify-center">
@@ -17,7 +17,7 @@ export default function About() {
         >
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-green-400 to-emerald-600 blur-3xl opacity-30 animate-pulse"></div>
           <img
-            src={nasib}
+            src={image}
             alt="Profile"
             className="relative w-[22rem] h-[22rem] object-cover rounded-3xl shadow-2xl border border-green-500/20"
           />

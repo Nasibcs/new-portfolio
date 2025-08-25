@@ -39,15 +39,15 @@ const projects = [
      tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "comming projects ",
-    description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
+    title: "comming soon...",
+    description: "A personal portfolio website to showcase ",
     link: "https://new-portfolio-seven-taupe.vercel.app/",
     repo: "https://github.com/yourusername/food-delivery",
     image: portfolio,
      tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "",
+    title: "comming soon...",
     description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
     link: "https://new-portfolio-seven-taupe.vercel.app/",
     repo: "https://github.com/yourusername/food-delivery",
