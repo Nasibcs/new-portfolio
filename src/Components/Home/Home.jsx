@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import '../../index.css';
 import { Link } from "react-router-dom";
-import image from "../About/images/image.jpg"
-
+import img from "../About/images/img.jpg"
 export default function Landing() {
   return (
     <div className="relative h-[50rem] flex flex-col lg:flex-row items-center px-4 
@@ -23,7 +22,7 @@ export default function Landing() {
         <div className="relative  w-80 h-80 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-green-400/30 shadow-2xl shadow-green-500/20 xl:h-[30rem] xl:w-[30rem]">
           <div className="w-full h-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white text-lg">
           <img 
-  src={image}
+  src={img}
   alt="Nasib" 
   className="w-full h-full object-cover"
 />
