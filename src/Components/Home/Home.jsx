@@ -74,6 +74,7 @@ export default function Landing() {
             View My Work
           </Link>
         </motion.div>
+        
       </motion.div>
     </div>
   );
