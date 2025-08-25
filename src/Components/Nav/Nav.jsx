@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
@@ -8,12 +8,32 @@ import ThemeToggle from "../../DarkMode/ThemsToggle";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [hidden, setHidden] = useState(false);
+
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+    setScrolled(currentScrollY > 10);
+    
+    // د navbar د پټولو لپاره کله چې لاندې سکرول کوئ
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+    
+    // د مینیو د بندولو لپاره کله چې سکرول کوئ
+    if (isOpen) {
+      setIsOpen(false);
+    }
+    
+    setLastScrollY(currentScrollY);
+  }, [lastScrollY, isOpen]);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -36,6 +56,11 @@ export default function Nav() {
     visible: { opacity: 1, y: 0 }
   };
 
+  const navVariants = {
+    visible: { y: 0 },
+    hidden: { y: -100 }
+  };
+
   return (
     <motion.nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -44,8 +69,9 @@ export default function Nav() {
           : "bg-transparent py-4"
       }`}
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, type: "spring" }}
+      animate={hidden ? "hidden" : "visible"}
+      variants={navVariants}
+      transition={{ duration: 0.3 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -106,7 +132,8 @@ export default function Nav() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg z-40 flex flex-col items-center justify-center"
+            className="fixed inset-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg z-40 flex flex-col items-center justify-center md:hidden"
+            onClick={() => setIsOpen(false)}
           >
             <motion.ul
               variants={mobileNavVariant}
@@ -120,7 +147,7 @@ export default function Nav() {
                   <Link
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className="text-2xl font-semibold text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-colors"
+                    className="text-2xl font-semibold text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-colors block py-2"
                   >
                     {item.name}
                   </Link>
