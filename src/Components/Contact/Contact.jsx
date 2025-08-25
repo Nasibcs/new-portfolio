@@ -142,7 +142,7 @@ export default function Contact() {
             className="flex flex-col justify-center space-y-8"
           >
             <p className="text-lg leading-relaxed">
-              Whether you have a question, want to collaborate, or just say hi — 
+              Whether you have a question, want to collaborate, or just say hi , 
               my inbox is always open. I’ll try my best to get back to you quickly.
             </p>
 

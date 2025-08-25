@@ -34,7 +34,7 @@ export default function About() {
             About Me
           </h1>
           <p className="mb-6 leading-relaxed text-lg">
-            Hi, I’m <span className="font-semibold text-green-500">Nasib</span> — a passionate 
+            Hi, I’m <span className="font-semibold text-green-500">Nasib</span> a passionate 
             frontend developer who loves creating beautiful, interactive, and modern web 
             experiences. My focus is on clean design, smooth animations, and delivering 
             impactful digital solutions.

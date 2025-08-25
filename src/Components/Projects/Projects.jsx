@@ -1,97 +1,82 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import img from "./images/image.png"
-
+import elearn from "./images/elearna (2).png"
+import un from "./images/un.png"
+import form from "./images/form1.png"
+import portfolio from "./images/portfolio .png";
 const projects = [
   {
-    title: "Real Estate Platform",
-    description: "A full-featured platform for buying, selling, and renting properties with virtual tours and AI recommendations.",
-    link: "https://yourrealestate.com",
-    repo: "https://github.com/yourusername/real-estate",
-    image:img,
-     tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    title: "Elearna - Online Learning Platform",
+    description: "A comprehensive online learning platform with courses, quizzes, and progress tracking for modern education.",
+    link: "https://elearna-website.vercel.app/",
+    repo: "https://github.com/Nasibcs/Elearna-website",
+    image:elearn,
+     tags: ["React","JavaScript", "Tailwind"]
   },
   {
-    title: "Online Learning App",
-    description: "An interactive e-learning platform with video lectures, quizzes, and progress tracking for modern education.",
-    link: "https://yourelearning.com",
-    repo: "https://github.com/yourusername/e-learning",
-    image: img,
-   tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    title: "University Admin Panel",
+    description: "A feature-rich admin panel for managing university operations, including student records, course management, and faculty administration. the username is : (nasib) and password is :(nasib)",
+    link: "https://university-admin-panel-dun.vercel.app/",
+    repo: "https://github.com/Nasibcs/University-Admin-Panel-",
+    image: un,
+   tags: ["React", "TypeScript","Tailwind"]
   },
   {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-    tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    title: "From Validation",
+    description: "A robust form validation library for React applications, providing easy-to-use validation rules and error handling.",
+    link: "https://from-validation-two.vercel.app/",
+    repo: "https://github.com/Nasibcs/From-validation-",
+    image: form,
+    tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
+    title: "My portfolio website",
+    description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
+    link: "https://new-portfolio-seven-taupe.vercel.app/",
     repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-     tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    image: portfolio,
+     tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
+    title: "comming projects ",
+    description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
+    link: "https://new-portfolio-seven-taupe.vercel.app/",
     repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-   tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    image: portfolio,
+     tags: ["React","JavaScript", "Tailwind"]
   },
     {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
+    title: "",
+    description: "A personal portfolio website to showcase my projects, skills, and experience as a developer.",
+    link: "https://new-portfolio-seven-taupe.vercel.app/",
     repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-      tags: ["React", "TypeScript","JavaScript", "Tailwind"]
+    image: portfolio,
+     tags: ["React","JavaScript", "Tailwind"]
   },
-    {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-      tags: ["React", "TypeScript","JavaScript", "Tailwind"]
-  },
-    {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
-    repo: "https://github.com/yourusername/food-delivery",
-    image:img,
-      tags: ["React", "TypeScript","JavaScript", "Tailwind"]
-  },
-    {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-     tags: ["React", "TypeScript","JavaScript", "Tailwind"]
-  },
-    {
-    title: "Food Delivery UI",
-    description: "Clean and modern UI/UX for a food delivery service with real-time order tracking and animations.",
-    link: "https://figma.com/yourdesign",
-    repo: "https://github.com/yourusername/food-delivery",
-    image: img,
-     tags: ["React", "TypeScript","JavaScript", "Tailwind"]
-  },
- 
- 
   
 ];
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-28 px-4 sm:px-8 lg:px-20 transition-colors duration-700">
+    <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-28 px-4 sm:px-8 lg:px-20 transition-colors duration-700 ">
+   <h1
+  className="
+    text-center relative bottom-16 
+    text-gray-700 dark:text-gray-300 
+    font-sans tracking-wide font-bold 
+    text-2xl sm:text-3xl md:text-4xl 
+    lg:text-start
+    xl:text-start
+    2xl:text-start
+    mt-24
+  "
+>
+  My Skills and Projects
+</h1>
+
    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
   {projects.map((project, index) => (
     <motion.div
       key={index}

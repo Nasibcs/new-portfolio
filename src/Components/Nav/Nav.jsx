@@ -56,7 +56,7 @@ export default function Nav() {
               to="/"
               className="text-2xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent"
             >
-              Nasib.dev
+              Nasib
             </Link>
           </motion.div>
 
